@@ -1,7 +1,8 @@
 <?php
-function students(){                                      // inicio de la funcion
+function students(){                                     // inicio de la funcion
     $array = [                                           // esto es la array principal
-        array(                                                  // aqui empiezan las sub array
+        array(                                           // aqui empiezan las sub array
+            "DNI"=>"111222333",
             "name"=>"Mateo",
             "E-mail"=>"mateo@ies.com",
             "age"=>"44",
@@ -9,6 +10,7 @@ function students(){                                      // inicio de la funcio
             "photo"=> "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Carlos_Cabezas_cropped.jpg/200px-Carlos_Cabezas_cropped.jpg"
         ),
         array(
+            "DNI"=>"111222444",
             "name"=>"Dani",
             "E-mail"=>"Dani@ies.com",
             "age"=>"22",
@@ -16,6 +18,7 @@ function students(){                                      // inicio de la funcio
             "photo"=>"http://as01.epimg.net/chile/imagenes/2016/01/12/masdeporte/1452631576_054300_1452631826_noticia_normal.jpg"
         ),
         array(
+            "DNI"=>"111222555",
             "name"=>"Rafa",
             "E-mail"=>"Rafa@ies.com",
             "age"=>"33 ",
@@ -23,9 +26,10 @@ function students(){                                      // inicio de la funcio
             "photo"=>"http://www.merchanendirecto.es/media_noticias/img_notiaunErHoHNW.jpg"
         ),
         array(
+            "DNI"=>"111222666",
             "name"=>"Marti",
             "E-mail"=>"Marti@ies.com",
-            "age"=>"21",
+            "age"=>"10",
             "course"=>" IAW,SAD,SXI",
             "photo"=>"https://www.humonegro.com/wp-content/ROGER-WATERS-02.png"
         ),

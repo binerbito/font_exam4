@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Restaurantes de Porreres</title>
+    <title>Examen IAW december 2018</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </head>
       <body>
-        <h1 style="text-align:center;">   Restaurantes de Porreres </h1> <br>
+        <h1 style="text-align:center;">   Examen IAW December 2018 </h1> <br>
         <form style="text-align:center;" method="GET" action="index.php" >
-            <label for="busqueda">Escriba la busqueda :</label>
+            <label for="busqueda">Escriba el DNI a buscar :</label>
             <input type="text" placeholder="Introduzca DNI" name="busqueda">
 
             
@@ -32,12 +32,20 @@
                     <div class="card-body">
                        
                         <img id='photo' src='<?=$value["photo"] ?>'/> 
-                        <h2> <?= $value["name"] ?></h2>
-                        <p><?= $value["E-mail"] ?></p>
-                        <p><?= $value["age"]?></p>
-                        <p><?= $value["course"]?></p>
-                    </div>
-                </div>
+                        <h2> NAME <?= $value["name"] ?></h2>
+                        <p>DNI= <?= $value["DNI"] ?></p>
+                        <p>E-Mail =<?= $value["E-mail"] ?></p>
+                        <p>AGE= <?= $value["age"]?></p>
+                        <p>Cursos =<?= $value["course"]?></p>
+ <?php
+            if ($value["age"]>=18) {                            // comprobacion de si es mayor o menor de edad
+                echo "Es mayor de edad";                        
+            }
+            else {echo "Es un bebe";
+            }       
+            ?>
+            </div>
+        </div>
 <?php    }                                                      // cierre del foreach
 ?>     
         </div>
