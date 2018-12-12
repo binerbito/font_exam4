@@ -36,8 +36,8 @@ function students(){                                     // inicio de la funcion
         
     ];
   /*  if(!empy($pre)){
-    //    echo "cercar" .$query;
-   //     $trobat = [] ;
+        echo "cercar" .$query;
+        $trobat = [] ;
         foreach($rest as $key=> $value){
             if(strpos(strtoupper($value),strtoupper($query))!==FALSE){
                 $trobat[] = $value;

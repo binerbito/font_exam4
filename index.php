@@ -15,8 +15,7 @@
         <form style="text-align:center;" method="GET" action="index.php" >
             <label for="busqueda">Escriba el DNI a buscar :</label>
             <input type="text" placeholder="Introduzca DNI" name="busqueda">
-
-            
+    
             <div class="form-check"></div>
             <button type="submit" class="btn btn-primary">ENVIAR</button>
 
@@ -44,8 +43,8 @@
             else {echo "Es un bebe";
             }       
             ?>
-            </div>
-        </div>
+                    </div>
+                </div>
 <?php    }                                                      // cierre del foreach
 ?>     
         </div>
